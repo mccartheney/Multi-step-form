@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%); 
+    --Pastel-blue: hsl(228, 100%, 84%); 
+    --Light-blue: hsl(206, 94%, 87%;) 
+    --Strawberry-red: hsl(354, 84%, 57%); 
+    --Cool-gray: hsl(231, 11%, 63%); 
+    --Light-gray: hsl(229, 24%, 87%) ;
+    --Magnolia: hsl(217, 100%, 97%); 
+    --Alabaster: hsl(231, 100%, 99%); 
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width : 1024px) {
+    .steps {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        height: 180px;
+        background-image: url(../images/bg-sidebar-mobile.svg);
+        background-size: cover;
+    }
+
+    .main_steps_step {
+        margin-top: 30px;
+    }
+
+    .main_steps_step_number {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid var(--White);
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active_step {
+        background-color: var(--Pastel-blue);
+        border: none;
+    }
+    
+    .active_step .main_steps_step_number-p {
+        color: var(--Marine-blue);
+
+    }
+
+    .main_steps_step_number-p {
+        color: var(--White);
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .main_steps_step_content {
+        display: none;
+    }
+}
