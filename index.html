@@ -98,14 +98,14 @@
     <div class="main_forms">
 
       <!-- Step 1 start -->
-      <form class="main_forms_form" onsubmit="return false">
+      <form class="main_forms_form " onsubmit="return false">
           <div class="main_forms_form_title">
             <h1 class="main_forms_form_title-h1">
               Personal info
             </h1>
 
             <p class="main_forms_form_title-p">
-              Please provide your name, email address, and phone number.
+              Please provide your name, email <br class="mobile">address, and phone number.
             </p>
           </div>
 
@@ -120,17 +120,17 @@
             <div class="main_forms_form_inputs_emailInput">
               <label for="email" class="main_forms_form_inputs_emailInput-label">
                 Email Address
-              <span class="requiredField">This field is required</span>
+              <span class="requiredField ">This field is required</span>
               <span class="invalidEmail">Please, insert a valid email</span>
               </label>
-              <input type="email" required class="main_forms_form_inputs_nameInput-input" id="email" placeholder="e.g. stephenking@lorem.com">
+              <input type="email" required class="main_forms_form_inputs_emailInput-input" id="email" placeholder="e.g. stephenking@lorem.com">
             </div>
             <div class="main_forms_form_inputs_phoneInput">
               <label for="phone" class="main_forms_form_inputs_phoneInput-label">
                 Phone Number
                 <span class="requiredField">This field is required</span>
               </label>
-              <input type="text" class="main_forms_form_inputs_nameInput-input" id="phone" placeholder="e.g. +1 234 567 890">
+              <input type="text" class="main_forms_form_inputs_phoneInput-input " id="phone" placeholder="e.g. +1 234 567 890">
             </div>
 
           </div>
@@ -139,7 +139,7 @@
 
         <!-- Step 2 start -->
 
-        <form action="" class="main_forms_form">
+        <form action="" class="main_forms_form ">
           <div class="main_forms_form_title">
             <h1 class="main_forms_form_title-h1">
               Select your plan
@@ -154,7 +154,7 @@
             <div class="main_forms_form_plan_plansSection">
               <div class="main_forms_form_plansSection_plan">
                 <div class="main_forms_form_plansSection_plan_image">
-                  <img src="./assets/images/icon-arcade.svg" alt="arcade" class="main_forms_form_plansSection_plan_image-img">
+                  <img src="./src/images/icon-arcade.svg" alt="arcade" class="main_forms_form_plansSection_plan_image-img">
                 </div>
 
                 <div class="main_forms_form_plansSection_plan_textContent">
@@ -175,7 +175,7 @@
 
               <div class="main_forms_form_plansSection_plan">
                 <div class="main_forms_form_plansSection_plan_image">
-                  <img src="./assets/images/icon-advanced.svg" alt="advanced" class="main_forms_form_plansSection_plan_image-img">
+                  <img src="./src/images/icon-advanced.svg" alt="advanced" class="main_forms_form_plansSection_plan_image-img">
                 </div>
               
                 <div class="main_forms_form_plansSection_plan_textContent">
@@ -196,7 +196,7 @@
 
               <div class="main_forms_form_plansSection_plan">
                 <div class="main_forms_form_plansSection_plan_image">
-                  <img src="./assets/images/icon-pro.svg" alt="pro" class="main_forms_form_plansSection_plan_image-img">
+                  <img src="./src/images/icon-pro.svg" alt="pro" class="main_forms_form_plansSection_plan_image-img">
                 </div>
               
                 <div class="main_forms_form_plansSection_plan_textContent">
@@ -216,7 +216,12 @@
             </div>
 
             <div class="main_forms_form_plan_toogle">
-              <span id="Monthly">Monthly</span>  <input type="checkbox"> <span id="Yearly">Yearly</span>
+              <span id="Monthly" class="selectedPlanSpan">Monthly</span>  
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <span id="Yearly">Yearly</span>
             </div>
           </div>
         </form>
@@ -225,7 +230,7 @@
 
         <!-- Step 3 start -->
 
-        <form action="" class="main_forms_form">
+        <form action="" class="main_forms_form active_form">
 
           <div class="main_forms_form_title">
             <h1 class="main_forms_form_title-h1">
@@ -264,7 +269,7 @@
             </div>
 
 
-            <div class="main_forms_form_addons_addon">
+            <div class="main_forms_form_addons_addon ">
               <div class="main_forms_form_addons_addon_left">
                 <div class="main_forms_form_addons_addon_left_checkBox">
                   <input type="checkbox" class="main_forms_form_addons_addon_left_checkBox-checkbox">
@@ -395,7 +400,7 @@
         <!-- Step 5 end -->
         <div class="main_forms_buttons">
           <button class="main_forms_buttons-button__goBack">Go Back</button>
-          <button class="main_forms_buttons-button__next" >Next</button>
+          <button class="main_forms_buttons-button__next" >Next Step</button>
         </div>
       </div>
       
