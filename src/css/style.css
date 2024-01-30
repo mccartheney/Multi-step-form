@@ -327,6 +327,100 @@
         background-color: var(--Light-blue);
     }
 
+    .main_forms_form_summary {
+        width: 90%;
+    }
+    
+    .main_forms_form_summary_review {
+        background-color: var(--Light-gray);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main_forms_form_summary_review_plan {
+        padding: 15px 0px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--Cool-gray);
+    }
+
+    .main_forms_form_summary_review_plan h3 {
+        color: var(--Marine-blue);
+        font-weight: 700;
+    }
+
+    .main_forms_form_summary_review_plan_info p{
+        color: var(--Marine-blue);
+        font-weight: 700;
+    }
+
+    .main_forms_form_summary_review_onlineSevice, .main_forms_form_summary_review_storage {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        width: 90%;
+    }
+
+    .main_forms_form_summary_review_onlineSevice p,
+    .main_forms_form_summary_review_storage p {
+        color: var(--Cool-gray);
+    }
+
+
+
+    .main_forms_form_summary_review_plan_info button{
+        border: none;
+        text-decoration: underline;
+        background-color: transparent;
+        color: var(--Cool-gray);
+    }
+
+    .main_forms_form_summary_total {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .main_forms_form_summary_total p{
+        margin-left: 5%;
+        color: var(--Cool-gray);
+    }
+
+    .main_forms_form_summary_total h2 {
+        font-weight: 700;
+        font-size: 17px;
+        color: var(--Purplish-blue);
+    }
+
+    .final {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .final h1 {
+        margin: 20px;
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--Marine-blue);
+    }
+
+    .final p {
+        width: 90%;
+        text-align: center;
+        color: var(--Cool-gray);
+        line-height: 25px;
+    }
+
     .main_forms_buttons button {
         border: none;
         color: var(--White);
@@ -338,5 +432,10 @@
         cursor: pointer;
     }
 
+    .main_forms_buttons-button__goBack{
+        background-color: transparent !important;
+        color: var(--Cool-gray) !important;
+        border: none !important;
+    }
 
 }
