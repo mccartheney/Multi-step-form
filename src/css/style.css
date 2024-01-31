@@ -399,22 +399,22 @@
         color: var(--Purplish-blue);
     }
 
-    .final {
+    .main_forms_form_final {
         height: 400px;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .final h1 {
+    .main_forms_form_final h1 {
         margin: 20px;
         font-size: 30px;
         font-weight: 700;
         color: var(--Marine-blue);
     }
 
-    .final p {
+    .main_forms_form_finall p {
         width: 90%;
         text-align: center;
         color: var(--Cool-gray);
