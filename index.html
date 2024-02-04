@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/src/css/styleDesktop.css">
   <link rel="stylesheet" href="/src/css/style.css">
 
-  <script src="./src/js/App.js"></script>
+  <script type = "module" src="./src/js/App.js"></script>
 
   <title>Multi-step form</title>
 
@@ -113,24 +113,24 @@
             <div class="main_forms_form_inputs_nameInput">
               <label for="name" class="main_forms_form_inputs_nameInput-label">
                 Name
-                <span class="requiredField">This field is required</span>
+                <span class="requiredField invisible" id="requireName">This field is required</span>
               </label>
-              <input type="text" class="main_forms_form_inputs_nameInput-input" id="name" placeholder="e.g. Stephen King">
+              <input type="text" class="main_forms_form_inputs_nameInput-input inputType1" id="name" placeholder="e.g. Stephen King">
             </div>
             <div class="main_forms_form_inputs_emailInput">
               <label for="email" class="main_forms_form_inputs_emailInput-label">
                 Email Address
-              <span class="requiredField ">This field is required</span>
-              <span class="invalidEmail">Please, insert a valid email</span>
+              <span class="requiredField invisible">This field is required</span>
+              <span class="invalidEmail invisible">Please, insert a valid email</span>
               </label>
-              <input type="email" required class="main_forms_form_inputs_emailInput-input" id="email" placeholder="e.g. stephenking@lorem.com">
+              <input type="email" required class="main_forms_form_inputs_emailInput-input inputType1" id="email" placeholder="e.g. stephenking@lorem.com">
             </div>
             <div class="main_forms_form_inputs_phoneInput">
               <label for="phone" class="main_forms_form_inputs_phoneInput-label">
                 Phone Number
-                <span class="requiredField">This field is required</span>
+                <span class="requiredField invisible">This field is required</span>
               </label>
-              <input type="text" class="main_forms_form_inputs_phoneInput-input " id="phone" placeholder="e.g. +1 234 567 890">
+              <input type="text" class="main_forms_form_inputs_phoneInput-input inputType1" id="phone" placeholder="e.g. +1 234 567 890">
             </div>
 
           </div>

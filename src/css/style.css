@@ -136,8 +136,12 @@
     }
 
     .requiredField, .invalidEmail{
-        display: none;
+        display: inline;
         color: var(--Strawberry-red);
+    }
+
+    .invisible{
+        display: none;
     }
 
     .wrongInput {

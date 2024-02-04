@@ -1,3 +1,5 @@
+import step1Verification from "./stepVerification/step1Verification.js";
+
 //actual step
 let pageNumber = 0;
 
@@ -22,3 +24,7 @@ let price = {
 
 //addon var
 let addons = [];
+
+window.onload = () => {
+    step1Verification()
+};
