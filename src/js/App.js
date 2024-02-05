@@ -1,4 +1,6 @@
 import step1Verification from "./stepVerification/step1Verification.js";
+import changeSteps from "./changeSteps/changeSteps.js";
+
 
 //actual step
 let pageNumber = 0;
