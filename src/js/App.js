@@ -1,5 +1,5 @@
 import step1Verification from "./stepVerification/step1Verification.js";
-import changeSteps from "./changeSteps/changeSteps.js";
+import step2Verification from "./stepVerification/step2Verification.js";
 
 
 //actual step
@@ -27,6 +27,32 @@ let price = {
 //addon var
 let addons = [];
 
+//button to next step
+let nextButton = document.querySelector(".main_forms_buttons-button__next");
+//button to prev step
+let prevButton = document.querySelector(".main_forms_buttons-button__goBack");
+
+//all forms from steps
+const forms = document.querySelectorAll(".main_forms_form");
+
 window.onload = () => {
-    step1Verification()
+    nextButton.onclick = () => {
+        switch (pageNumber) {
+            case 0:
+                if (step1Verification() == true) {
+                    forms[pageNumber].classList.remove("active_form");
+                    forms[pageNumber + 1].classList.add("active_form");
+                }
+
+                pageNumber++
+                break;
+        
+            case 1 : 
+
+            default:
+                break;
+        }
+    };
+    prevButton.onclick = () => {};
+
 };

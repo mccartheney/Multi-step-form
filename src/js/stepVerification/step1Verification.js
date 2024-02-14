@@ -50,14 +50,9 @@ const step1Verification = () => {
         }
     });
 
-    if (!successArray.includes("fail")) {return false}
+    if (successArray.includes("fail")) {return false}
     return true
 };
 
-document.querySelector(".main_forms_buttons-button__next").addEventListener("click", () => {
-    console.log(
-        step1Verification()
-    );
-})
 
 export default step1Verification
